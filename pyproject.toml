@@ -6,9 +6,15 @@ authors = ["Kevin_laptop <kevin820606@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+requests = "^2.26.0"
+SQLAlchemy = "^1.4.25"
+PyMySQL = "^1.0.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+mypy = "^0.910"
+black = {version = "^21.9b0", allow-prereleases = true}
+types-requests = "^2.25.11"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
