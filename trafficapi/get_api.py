@@ -8,7 +8,6 @@ class APIquery:
         self.data: dict[str, trafficapidata] = dict()
 
     def __get_data(self) -> list[dict]:
-
         req = requests.get(self.url)
         return req.json()
 

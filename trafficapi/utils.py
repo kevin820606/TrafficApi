@@ -50,6 +50,7 @@ class trafficapidata:
     x1: float
 
     def __post_init__(self):
+        self.happendate = datetime.strptime(self.happendate, "%Y-%m-%d")
         self.modDttm = datetime.strptime(self.modDttm, "%Y-%m-%d %H:%M:%S.%f")
         for field in fields(self):
             value = getattr(self, field.name)
