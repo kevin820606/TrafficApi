@@ -166,3 +166,8 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/python
 
+
+
+# user info
+trafficapi/config.py
+localtest.py
